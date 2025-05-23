@@ -27,19 +27,11 @@ parser.add_argument("--pretrain_dir", default='pretrain_models', type=str,
                     help="The output directory where the model predictions and checkpoints will be written.")
 parser.add_argument("--train_dir", default='train_models', type=str,
                     help="The output directory where the final model is stored in.")
-# parser.add_argument("--bert_model", default="/home/zhanglu/LOOP/model/bert-base-uncased", type=str,
-#                     help="The path or name for the pre-trained bert model.")
-# parser.add_argument("--tokenizer", default="/home/zhanglu/LOOP/model/bert-base-uncased", type=str,
-#                     help="The path or name for the tokenizer")
-
-
-## bert-base-chinese
-parser.add_argument("--bert_model", default="/home/zhanglu/KTN-main/model", type=str,
+#bert-based-uncased
+parser.add_argument("--bert_model", default="model/bert-base-uncased", type=str,
                     help="The path or name for the pre-trained bert model.")
-
-parser.add_argument("--tokenizer", default="/home/zhanglu/KTN-main/model", type=str,
+parser.add_argument("--tokenizer", default="model/bert-base-uncased", type=str,
                     help="The path or name for the tokenizer")
-
 
 parser.add_argument("--max_seq_length", default=None, type=int,
                     help="The maximum total input sequence length after tokenization. Sequences longer "
