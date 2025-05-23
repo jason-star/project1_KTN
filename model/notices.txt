@@ -1,0 +1,1 @@
+You need to put bert-based-uncased model in this folder.
